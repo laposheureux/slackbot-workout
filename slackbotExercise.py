@@ -89,9 +89,7 @@ def selectUsers(bot, exercise):
             return bot.min_pick_odds
         if user.last_workout < max_rest_cutoff:
             return bot.max_pick_odds
-        return (user.last_workout - max_rest_cutoff) /
-            (min_rest_cutoff - max_rest_cutoff) * (bot.max_pick_odds - bot.min_pick_odds)
-            + bot.min_pick_odds
+        return (user.last_workout - max_rest_cutoff) / (min_rest_cutoff - max_rest_cutoff) * (bot.max_pick_odds - bot.min_pick_odds) + bot.min_pick_odds
     
     user_list = []
     max_odds = 0
