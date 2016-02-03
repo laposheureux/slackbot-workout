@@ -81,8 +81,8 @@ Selects a list of users to exercise based on their last exercise time
 '''
 def selectUsers(bot, exercise):
     active_users = fetchActiveUsers(bot)
-    min_rest_cutoff = datetime.datetime.now() - datetime.timedelta(minutes = self.min_rest_time)
-    max_rest_cutoff = datetime.datetime.now() - datetime.timedelta(minutes = self.max_rest_time)
+    min_rest_cutoff = datetime.datetime.now() - datetime.timedelta(minutes = bot.min_rest_time)
+    max_rest_cutoff = datetime.datetime.now() - datetime.timedelta(minutes = bot.max_rest_time)
     
     def userOdds(user):
         if user.last_workout > min_rest_cutoff:

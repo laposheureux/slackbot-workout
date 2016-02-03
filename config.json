@@ -1,7 +1,7 @@
 {
   "teamDomain": "imgur",
-  "channelName": "fitness",
-  "channelId": "C0K3W0SQL",
+  "channelName": "slackbottesting",
+  "channelId": "C0FUJR3PC",
 
   "officeHours": {
     "on": true,
@@ -19,11 +19,11 @@
     },
     "restTime": {
       "minTime": 60,
-      "maxTime": 240,
+      "maxTime": 240
     },
     "pickOdds": {
       "minOdds": 0.05,
-      "maxOdds": 0.8,
+      "maxOdds": 0.8
     },
     "numPeople": 8,
     "slidingWindowSize": 8,
